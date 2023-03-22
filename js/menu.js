@@ -17,3 +17,12 @@ window.addEventListener("click", (e) => {
     menu.classList.toggle("spread");
   }
 });
+
+let alertShown = false;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 1400 && !alertShown) {
+    alert("¡Prueba de abrir una de las imágnes!");
+    alertShown = true;
+  }
+});
